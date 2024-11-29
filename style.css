@@ -1,0 +1,126 @@
+/* Configuração geral */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF4CE; /* Fundo claro */
+    color: #368171; /* Cor principal do texto */
+    display: flex; /* Habilita o uso do Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #D34B22; /* Destaque forte */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para textos descritivos */
+p {
+    font-size: 1.1rem;
+    color: #368171; /* Tom suave para leitura */
+    margin: 10px auto 20px;
+    line-height: 1.6;
+    width: 80%;
+}
+
+/* Caixa do conteúdo principal */
+#app {
+    padding: 20px;
+    max-width: 800px;
+    width: 90%; /* Garante responsividade */
+    background: #FFF4CE;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    background: #368171; /* Gradiente elegante */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #D24720, #FBAE01); /* Efeito vibrante ao passar o mouse */
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da área das perguntas */
+#questions {
+    padding: 20px;
+}
+
+#questions p {
+    font-size: 1.2rem;
+    color: #932800; /* Destaque para perguntas */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo para resultados */
+#app h2 {
+    font-size: 2rem;
+    color: #FBAE01; /* Cor de destaque */
+    margin-bottom: 20px;
+}
+
+#app p {
+    font-size: 1.1rem;
+    color: #368171; /* Leitura fácil */
+    line-height: 1.8;
+}
+
+#app p strong {
+    color: #FBAE01; /* Destaque para palavras importantes */
+}
+
+#app img {
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto 1rem; /* Centraliza e adiciona margem inferior */
+    display: block; /* Remove o comportamento inline padrão da imagem */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove recuo padrão */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
